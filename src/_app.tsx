@@ -16,10 +16,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				description="ここはコンパスのメンバー募集や質問募集ができる掲示板です。"
 				openGraph={{
 					type: "website",
-					title: "",
-					description: "デフォルトの説明",
-					site_name: "サイトの名前",
-					url: "サイトのURL",
+					title: "コンパス募集掲示板",
+					description: "ここはコンパスのメンバー募集や質問募集ができる掲示板です。",
+					site_name: "コンパス掲示板",
+					url: "https://www.compass-forum.net",
 					images: [
 					 {
 					 　url: "https://www.example.ie/og-image-01.jpg",
