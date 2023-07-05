@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				/>
 			</Head>
 			<DefaultSeo
-				defaultTitle="コンパス募集掲示板"
+				defaultTitle="コンパス掲示板"
 				description="ここはコンパスのメンバー募集や質問募集ができる掲示板です。"
 				openGraph={{
 					type: "website",
