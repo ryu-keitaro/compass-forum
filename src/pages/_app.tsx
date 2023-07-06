@@ -3,9 +3,17 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
 import Home from './index';
+import storage from "../firebase"
 
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+
+	// const storage = getStorage();
+	// const imageRef = ref(storage, "images/topicon.jpg");
+
+	// const imageUrl = await getDownloadURL(imageRef);
+
+
 	return (
 		<>
 			<Head>
@@ -26,9 +34,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://compass-forum.net/topicon.jpg",
-						width: 512,
-						height: 512,
+					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon-favicon.jpg?alt=media&token=e013e30a-0f81-4d53-934a-5de90bde3fe2",
+						width: 800,
+						height: 600,
 						alt: 'Og Image Alt',
 						type: 'image/jpeg',
 					 },
@@ -42,7 +50,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				// 		cardType: "summary_large_image",
 				// }}
 			/>
-			<Component {...pageProps} nanika={Home} />
+			<Component {...pageProps} title={Home} storage={storage} />
 		</>
 	);
 };
