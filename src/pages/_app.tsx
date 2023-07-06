@@ -3,27 +3,37 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React,{useEffect, useState} from 'react';
 import Home from './index';
-
+import { initializeApp } from 'firebase/app';
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 // import storage from "../firebase";
 
+const firebaseConfig = {
+	// Firebaseの設定情報をここに入力
+	apiKey: "AIzaSyBE6W2TXtedCPj5ZoKQu2WIyVEBOMD0BIg",
+	authDomain: "test-nextjs-d6670.firebaseapp.com",
+	projectId: "test-nextjs-d6670",
+	storageBucket: "test-nextjs-d6670.appspot.com",
+	messagingSenderId: "531537153080",
+	appId: "1:531537153080:web:5b1656e3c43845d1baeacd",
+	measurementId: "G-KYVPHJTMQX"
+  };
 
-
+const app = initializeApp(firebaseConfig);
+const storage = getStorage(app);
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-	const [ogImageUrl, setOgImageUrl] = useState<string | undefined>(undefined);
+	 const [ogImageUrl, setOgImageUrl] = useState<string | undefined>(undefined);
 
-	useEffect(() => {
-		const fetchDownloadURL = async () => {
-		  const storage = getStorage(); // Firebase Storageのインスタンスを取得する
-		  const storageRef = ref(storage, "/opengraph.jpg");
-		  const downloadURL = await getDownloadURL(storageRef);
-		  setOgImageUrl(downloadURL); 
-		  // ダウンロードURLを使用する処理
-		};
+	 useEffect(() => {
+	 	const fetchDownloadURL = async () => {
+	 	  const storageRef = ref(storage, "/opengraph.jpg");
+	 	  const downloadURL = await getDownloadURL(storageRef);
+	 	  setOgImageUrl(downloadURL); 
+	 	  // ダウンロードURLを使用する処理
+	 	};
 	  
-		fetchDownloadURL();
-	  }, []);
+	 	fetchDownloadURL();
+	   }, []);
 
 
 	return (
