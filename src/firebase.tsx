@@ -2,21 +2,19 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAnalytics } from "firebase/analytics";
-import { getStorage } from "firebase/storage";
-
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyBE6W2TXtedCPj5ZoKQu2WIyVEBOMD0BIg",
-  authDomain: "test-nextjs-d6670.firebaseapp.com",
-  projectId: "test-nextjs-d6670",
-  storageBucket: "test-nextjs-d6670.appspot.com",
-  messagingSenderId: "531537153080",
-  appId: "1:531537153080:web:5b1656e3c43845d1baeacd",
-  measurementId: "G-KYVPHJTMQX"
+  apiKey: "AIzaSyAL2k3eiGWuVfvxZd2-1QrzPZzYUunPdSU",
+  authDomain: "conpas-93e54.firebaseapp.com",
+  projectId: "conpas-93e54",
+  storageBucket: "conpas-93e54.appspot.com",
+  messagingSenderId: "989467913511",
+  appId: "1:989467913511:web:30efac48507ccec4768d02",
+  measurementId: "G-5JSSYVBJR0"
 };
 
 // Initialize Firebase
@@ -28,9 +26,5 @@ if (typeof window !== "undefined") {
   // クライアントサイドのみで実行されるコード
   analytics = getAnalytics(app);
 }
-
-// const storage = getStorage(app);
-
-
 
 export default db;
