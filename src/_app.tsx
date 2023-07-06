@@ -33,9 +33,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					],
 				}}
 				twitter={{
-					handle: '@handle',
-					site: '@site',
-					cardType: "summary_large_image",
+						handle: '@handle',
+						site: '@site',
+						cardType: "summary_large_image",
 				}}
 			/>
       ...

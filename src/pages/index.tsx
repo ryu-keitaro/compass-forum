@@ -3,6 +3,7 @@ import MainLayout from '../layouts'
 import styles from '../styles/Home.module.scss'
 import Nav from "../components/nav";
 import AppData from '@/components/BBS/databox';
+import MyApp from "@/_app";
 
 
 
