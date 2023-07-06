@@ -58,7 +58,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "ogImageUrl" || "",
+					 	url: ogImageUrl || "",
 						width: 512,//元の値800
 						height: 512,//元の値600
 						alt: 'Og Image Alt',
