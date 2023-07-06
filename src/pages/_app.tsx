@@ -3,7 +3,6 @@ import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React,{useEffect, useState} from 'react';
 import Home from './index';
-import { initializeApp } from 'firebase/app';
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 // import storage from "../firebase";
 
@@ -18,14 +17,13 @@ const firebaseConfig = {
 	measurementId: "G-KYVPHJTMQX"
   };
 
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	 const [ogImageUrl, setOgImageUrl] = useState<string | undefined>(undefined);
 
 	 useEffect(() => {
 	 	const fetchDownloadURL = async () => {
+		  const storage = getStorage();
 	 	  const storageRef = ref(storage, "gs://test-nextjs-d6670.appspot.com/opengraph.jpg");
 	 	  const downloadURL = await getDownloadURL(storageRef);
 	 	  setOgImageUrl(downloadURL); 
@@ -59,8 +57,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					images: [
 					 {
 					 	url: ogImageUrl || "",
-						width: 512,//元の値800
-						height: 512,//元の値600
+						width: 1200,//元の値800
+						height: 630,//元の値600
 						alt: 'Og Image Alt',
 						type: 'image/jpeg',
 					 },
