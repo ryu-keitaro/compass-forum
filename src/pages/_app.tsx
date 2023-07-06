@@ -5,7 +5,6 @@ import React from 'react';
 import Home from './index';
 
 
-
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<>
@@ -27,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://www.compass-forum.net/public/topicon.jpg",
+					 	url: "https://drive.google.com/file/d/1NfDUOQ_5OGq6-GoDMRtjblkROPMEdIoi/view?usp=drive_link",
 						width: 512,
 						height: 512,
 						alt: 'Og Image Alt',
