@@ -5,6 +5,7 @@ import React from 'react';
 import Home from './index';
 
 
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
 		<>
@@ -16,18 +17,19 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 			</Head>
 			<DefaultSeo
 				defaultTitle="コンパス募集掲示板"
+				canonical="https://www.commpass-forum.net"
 				description="ここはコンパスのメンバー募集や質問募集ができる掲示板です。"
 				openGraph={{
 					type: "website",
-					title: "コンパスタイトル",
-					description: "ここはコンパスのメンバー募集や質問募集ができる掲示板です。",
-					site_name: "メンバー募集",
+					title: "コンパス募集掲示板",
+					description: "コンパスのメンバー募集や質問募集ができる掲示板です。",
+					site_name: "COMPASS.NET",
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://www.example.ie/og-image-01.jpg",
-						width: 800,
-						height: 600,
+					 	url: "https://drive.google.com/file/d/1a16eobdsB7hTcEyhfAVZnt8y2KMRs8qM/view?usp=drive_link",
+						width: 512,
+						height: 512,
 						alt: 'Og Image Alt',
 						type: 'image/jpeg',
 					 },
@@ -35,11 +37,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				}}
 
 
-				twitter={{
-						handle: '@handle',
-						site: '@site',
-						cardType: "summary_large_image",
-				}}
+				// twitter={{
+				// 		handle: '@handle',
+				// 		site: '@site',
+				// 		cardType: "summary_large_image",
+				// }}
 			/>
 			<Component {...pageProps} nanika={Home} />
 		</>
