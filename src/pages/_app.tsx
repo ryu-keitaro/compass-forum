@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://drive.google.com/file/d/1NfDUOQ_5OGq6-GoDMRtjblkROPMEdIoi/view?usp=sharing",
+					 	url: "https://drive.google.com/file/d/1NfDUOQ_5OGq6-GoDMRtjblkROPMEdIoi//uc?export=download",
 						width: 512,
 						height: 512,
 						alt: 'Og Image Alt',
