@@ -31,7 +31,7 @@ const Home:React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
 
         
         {/* <AllPosts/> */}
-        <Component {...pageProps} />
+        {/* <Component {...pageProps} /> */}
         <AppData />
         
         
