@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "gs://test-nextjs-d6670.appspot.com/topicon.jpg",
+					 	url: "https://compass-forum.net/topicon.jpg",
 						width: 512,
 						height: 512,
 						alt: 'Og Image Alt',
