@@ -5,9 +5,7 @@ import Nav from "../components/nav";
 import BBSfight from '../components/BBSfight';
 import React from 'react';
 
-
 export default function Home() {
- 
   return (
     <MainLayout>
       {/* <Head>

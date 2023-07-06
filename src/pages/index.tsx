@@ -13,7 +13,7 @@ import AppData from '@/components/BBS/databox';
 
 // export default function Home() {
   
-const Home = ({ Component, pageProps }: AppProps) => {
+const Home:React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <MainLayout>
       <Head>
@@ -29,7 +29,7 @@ const Home = ({ Component, pageProps }: AppProps) => {
         <div className={styles.blank} />
         <div className={styles.main} >
 
-        
+        <Component{...pageProps}/>
         {/* <AllPosts/> */}
         <AppData />
         
