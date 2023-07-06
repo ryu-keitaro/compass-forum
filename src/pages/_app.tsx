@@ -2,6 +2,7 @@ import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
 import React from 'react';
+import Home from './index';
 
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
@@ -40,7 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 						cardType: "summary_large_image",
 				}}
 			/>
-			aiueo
+			<Home {...pageProps} />
 		</>
 	);
 };
