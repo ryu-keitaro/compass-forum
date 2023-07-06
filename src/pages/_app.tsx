@@ -7,8 +7,6 @@ import Home from './index';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 
-	
-
 	return (
 		<>
 			<Head>
