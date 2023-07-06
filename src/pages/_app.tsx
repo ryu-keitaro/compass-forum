@@ -1,11 +1,29 @@
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import React from 'react';
+import React,{useEffect, useState} from 'react';
 import Home from './index';
+
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
+// import storage from "../firebase";
+
+
 
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
+	const [ogImageUrl, setOgImageUrl] = useState<string | undefined>(undefined);
+
+	useEffect(() => {
+		const fetchDownloadURL = async () => {
+		  const storage = getStorage(); // Firebase Storageのインスタンスを取得する
+		  const storageRef = ref(storage, "/topicon.jpg");
+		  const downloadURL = await getDownloadURL(storageRef);
+		  // ダウンロードURLを使用する処理
+		};
+	  
+		fetchDownloadURL();
+	  }, []);
+
 
 	return (
 		<>
@@ -29,7 +47,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
+					 	url: "ogImageUrl",
 						width: 512,//元の値800
 						height: 512,//元の値600
 						alt: 'Og Image Alt',
