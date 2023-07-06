@@ -29,6 +29,8 @@ if (typeof window !== "undefined") {
   analytics = getAnalytics(app);
 }
 
-const storage = getStorage(app);
+// const storage = getStorage(app);
 
-export default { db, storage };
+
+
+export default db;
