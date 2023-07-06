@@ -29,8 +29,9 @@ const Home:React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
         <div className={styles.blank} />
         <div className={styles.main} >
 
-        <Component{...pageProps}/>
+        
         {/* <AllPosts/> */}
+        <Component {...pageProps} />
         <AppData />
         
         
