@@ -26,7 +26,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 
 	 useEffect(() => {
 	 	const fetchDownloadURL = async () => {
-	 	  const storageRef = ref(storage, "/opengraph.jpg");
+	 	  const storageRef = ref(storage, "gs://test-nextjs-d6670.appspot.com/opengraph.jpg");
 	 	  const downloadURL = await getDownloadURL(storageRef);
 	 	  setOgImageUrl(downloadURL); 
 	 	  // ダウンロードURLを使用する処理
