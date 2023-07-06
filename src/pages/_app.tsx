@@ -19,9 +19,9 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				description="ここはコンパスのメンバー募集や質問募集ができる掲示板です。"
 				openGraph={{
 					type: "website",
-					title: "コンパス掲示板",
+					title: "コンパスタイトル",
 					description: "ここはコンパスのメンバー募集や質問募集ができる掲示板です。",
-					site_name: "コンパス募集掲示板",
+					site_name: "メンバー募集",
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
@@ -33,6 +33,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					 },
 					],
 				}}
+
+
 				twitter={{
 						handle: '@handle',
 						site: '@site',
