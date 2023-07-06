@@ -29,7 +29,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=e6693c30-45d6-4711-8eb9-06f3f4250e4c",
+					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
 						width: 512,//元の値800
 						height: 512,//元の値600
 						alt: 'Og Image Alt',
