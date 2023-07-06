@@ -40,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 						cardType: "summary_large_image",
 				}}
 			/>
-			<Component {...pageProps}/>
+			aiueo
 		</>
 	);
 };
