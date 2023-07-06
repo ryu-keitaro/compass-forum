@@ -1,6 +1,6 @@
 import styles from './index.module.scss'
 
-import db from '@/firebase';
+import {db} from '@/firebase';
 import  React, { useEffect, useState } from 'react';
 import { DocumentData } from 'firebase/firestore';
 
