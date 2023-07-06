@@ -18,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 		  const storage = getStorage(); // Firebase Storageのインスタンスを取得する
 		  const storageRef = ref(storage, "/opengraph.jpg");
 		  const downloadURL = await getDownloadURL(storageRef);
+		  setOgImageUrl(downloadURL); 
 		  // ダウンロードURLを使用する処理
 		};
 	  
