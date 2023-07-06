@@ -1,3 +1,5 @@
+import React from 'react';
+import { AppProps } from 'next/app';
 import Head from 'next/head'/* header で動いてる　よく分からん*/
 import MainLayout from '../layouts'
 import styles from '../styles/Home.module.scss'
@@ -9,8 +11,9 @@ import AppData from '@/components/BBS/databox';
 
 
 
-export default function Home() {
- 
+// export default function Home() {
+  
+const Home = ({ Component, pageProps }: AppProps) => {
   return (
     <MainLayout>
       <Head>
@@ -39,6 +42,8 @@ export default function Home() {
       
   
     </MainLayout>
-  )
-}
+  );
+};
+
+export default Home;
 
