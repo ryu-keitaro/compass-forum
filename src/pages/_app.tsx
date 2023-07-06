@@ -1,38 +1,11 @@
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
-import React,{useEffect, useState} from 'react';
+import React from 'react';
 import Home from './index';
-import { getStorage, ref, getDownloadURL } from "firebase/storage";
-// import storage from "../firebase";
-
-const firebaseConfig = {
-	// Firebaseの設定情報をここに入力
-	apiKey: "AIzaSyBE6W2TXtedCPj5ZoKQu2WIyVEBOMD0BIg",
-	authDomain: "test-nextjs-d6670.firebaseapp.com",
-	projectId: "test-nextjs-d6670",
-	storageBucket: "test-nextjs-d6670.appspot.com",
-	messagingSenderId: "531537153080",
-	appId: "1:531537153080:web:5b1656e3c43845d1baeacd",
-	measurementId: "G-KYVPHJTMQX"
-  };
 
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
-	 const [ogImageUrl, setOgImageUrl] = useState<string | undefined>(undefined);
-
-	 useEffect(() => {
-	 	const fetchDownloadURL = async () => {
-		  const storage = getStorage();
-	 	  const storageRef = ref(storage, "gs://test-nextjs-d6670.appspot.com/opengraph.jpg");
-	 	  const downloadURL = await getDownloadURL(storageRef);
-	 	  setOgImageUrl(downloadURL); 
-	 	  // ダウンロードURLを使用する処理
-	 	};
-	  
-	 	fetchDownloadURL();
-	   }, []);
-
 
 	return (
 		<>
@@ -56,7 +29,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-					 	url: ogImageUrl || "",
+					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
 						width: 1200,//元の値800
 						height: 630,//元の値600
 						alt: 'Og Image Alt',

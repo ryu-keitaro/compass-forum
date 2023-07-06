@@ -29,4 +29,4 @@ if (typeof window !== "undefined") {
   analytics = getAnalytics(app);
 }
 
-export {db, storage,analytics};
+export default db; storage;
