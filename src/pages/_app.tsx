@@ -41,8 +41,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 						cardType: "summary_large_image",
 				}}
 			/>
-			ここにindex表示
-			{/* <Home {...pageProps} /> */}
+			<Component {...pageProps} title={Home} />
 		</>
 	);
 };
