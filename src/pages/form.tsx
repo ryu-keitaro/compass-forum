@@ -1,14 +1,11 @@
-import React from 'react';
-import { AppProps } from 'next/app';
 import Head from 'next/head'/* header で動いてる　よく分からん*/
 import MainLayout from '../layouts'
 import styles from '../styles/Home.module.scss'
 import Nav from "../components/nav";
 
 
-
-const Home = ({ Component, pageProps }: AppProps) => {
-
+export default function Home() {
+ 
   return (
     <MainLayout>
       <Head>
@@ -32,7 +29,6 @@ const Home = ({ Component, pageProps }: AppProps) => {
       
   
     </MainLayout>
-  );
-};
+  )
+}
 
-export default Home;
