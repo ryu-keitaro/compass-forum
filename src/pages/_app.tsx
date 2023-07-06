@@ -30,8 +30,8 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					images: [
 					 {
 					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
-						width: 1200,//元の値800
-						height: 630,//元の値600
+						width: 512,//元の値800
+						height: 512,//元の値600
 						alt: 'Og Image Alt',
 						type: 'image/jpeg',
 					 },
