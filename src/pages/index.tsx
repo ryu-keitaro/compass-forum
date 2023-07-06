@@ -1,6 +1,6 @@
 import React from 'react';
 import { AppProps } from 'next/app';
-import Head from 'next/head'/* header で動いてる　よく分からん*/
+// import Head from 'next/head'header で動いてる　よく分からん*/
 import MainLayout from '../layouts'
 import styles from '../styles/Home.module.scss'
 import Nav from "../components/nav";
@@ -16,10 +16,10 @@ import AppData from '@/components/BBS/databox';
 const Home:React.FC<AppProps> = ({ Component, pageProps }: AppProps) => {
   return (
     <MainLayout>
-      <Head>
+      {/* <Head>
         
         
-      </Head>
+      </Head> */}
        <div className={styles.contents}>
         <div className={styles.nav}>
           <nav>

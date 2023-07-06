@@ -1,6 +1,8 @@
 import { DefaultSeo } from 'next-seo';
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import React from 'react';
+
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
 	return (
@@ -38,7 +40,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 						cardType: "summary_large_image",
 				}}
 			/>
-      ...
+			<Component {...pageProps}/>
 		</>
 	);
 };
