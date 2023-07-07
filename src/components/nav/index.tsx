@@ -10,7 +10,7 @@ const TOPICS = [
   {
     icon: "/megaphone.png",
     path: "/",
-    title: "募",
+    // title: "募",
     name: "メンバー募集",
   },
   {
