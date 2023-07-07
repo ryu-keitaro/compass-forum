@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
                       height={50}
                       priority
                     />
-                    <span className={styles.titlesize}>{topic.title}</span>
+                    {/* <span className={styles.titlesize}>{topic.title}</span> */}
                   
                 
                 {/* </Link> */}
