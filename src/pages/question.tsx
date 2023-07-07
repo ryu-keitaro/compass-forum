@@ -23,7 +23,7 @@ export default function Home() {
         <div className={styles.blank} />
         <div className={styles.main} >
         
-        <BBSquestion />
+        {/* <BBSquestion /> */}
         </div>
       </div>
       
