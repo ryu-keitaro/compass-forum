@@ -57,11 +57,11 @@ const Nav: React.FC = () => {
                       src={topic.icon}
                       alt=""
                       loading="eager"
-                      width={33}
-                      height={33}
+                      width={50}
+                      height={50}
                       priority
                     />
-                    {/* <span className={styles.titlesize}>{topic.title}</span> */}
+                    <span className={styles.titlesize}>{topic.title}</span>
                   
                 
                 {/* </Link> */}

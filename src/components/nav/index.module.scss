@@ -1,16 +1,14 @@
 .container {
     margin-top: 0px;/*文字の下s幅*/
     width: 100%;
-    display: flex;
-    justify-content: center; 
+    display: block;
+
     
   }
   
   .contents {
     list-style-type: none;
     height: auto;
-    display: flex; 
-    justify-content: center; 
    
     
     >li {
@@ -18,17 +16,14 @@
       opacity: 0.7;
       color: rgb(173, 49, 49);
       border: double 5px #000;
-      display: flex; /* Added */
-      flex-direction: column; /* Added */
-      align-items: center; /* Added */
-      text-align: center; /* Added */
-        
+      
       
   }
   }
   .button{
     width: 50px;
     color: rgb(15, 36, 36);
+    margin-top: 10px;
     justify-content: center;
     font-weight: bold;
        
