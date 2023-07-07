@@ -58,7 +58,7 @@ const Nav: React.FC = () => {
                       alt=""
                       loading="eager"
                       width={80}
-                      height={60}
+                      height={80}
                       priority
                     />
                     {/* <span className={styles.titlesize}>{topic.title}</span> */}
