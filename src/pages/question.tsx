@@ -23,7 +23,9 @@ export default function Home() {
         <div className={styles.blank} />
         <div className={styles.main} >
         
-        {/* <BBSquestion /> */}
+        <BBSquestion /> 
+        {/*↑ 疑ボタンを押したら投稿が表示される */}
+
         </div>
       </div>
       
