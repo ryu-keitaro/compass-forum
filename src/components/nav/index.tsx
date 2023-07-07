@@ -16,25 +16,25 @@ const TOPICS = [
   {
     icon: "/planning.png",
     path: "/solicit",
-    title: "誘",
+    // title: "誘",
     name: "勧誘募集",
   },
   {
     icon: "/swords.png",
     path: "/fight",
-    title: "共",
+    // title: "共",
     name: "固定募集",
   },
   {
     icon: "/question-mark.png",
     path: "/question",
-    title: "疑",
+    // title: "疑",
     name: "質問募集",
   },
   {
     icon: "/menu.png",
     path: "/menu",
-    title: "使",
+    // title: "使",
     name: "使い方",
   },
 ];
@@ -61,7 +61,7 @@ const Nav: React.FC = () => {
                       height={33}
                       priority
                     />
-                    <span className={styles.titlesize}>{topic.title}</span>
+                    {/* <span className={styles.titlesize}>{topic.title}</span> */}
                   
                 
                 {/* </Link> */}
