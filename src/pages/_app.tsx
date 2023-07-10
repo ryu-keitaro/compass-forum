@@ -34,11 +34,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-						// ↓画像を引っ張ってくる所（自分の公開URL/public内の画像名）
-					 	url: "/https://compass-forum.vercel.app/topicon.jpg",
+						// ↓firebasestorageに保存した画像を引っ張ってくる所（url変更必要）
+					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
 						width: 512,
 						height: 512,
-						alt: 'OpenGraph Image',
+						alt: 'Og Image Alt',
 						type: 'image/jpeg',
 					 },
 					],
@@ -48,7 +48,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 				 twitter={{
 				 		handle: '@handle',
 				 		site: '@site',
-				 		cardType: "summary_large_image",
+				 		cardType: "summary",
 				 }}
 			/>
 			
