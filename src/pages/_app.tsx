@@ -34,11 +34,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					url: "https://www.compass-forum.net",
 					images: [
 					 {
-						// ↓firebasestorageに保存した画像を引っ張ってくる所（url変更必要）
-					 	url: "https://compass-forum.net/topicon.jpg",
+						// ↓画像を引っ張ってくる所（自分の公開URL/public内の画像名）
+					 	url: "https://https://vercel.live/link/compass-forum-git-main-ryu-keitaro.vercel.app?via=deployment-domains-list-branch/topicon.jpg",
 						width: 512,
 						height: 512,
-						alt: 'Og Image Alt',
+						alt: 'OpenGraph Image',
 						type: 'image/jpeg',
 					 },
 					],
