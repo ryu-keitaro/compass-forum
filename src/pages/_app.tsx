@@ -35,7 +35,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					images: [
 					 {
 						// ↓画像を引っ張ってくる所（自分の公開URL/public内の画像名）
-					 	url: "https://https://vercel.live/link/compass-forum-git-main-ryu-keitaro.vercel.app?via=deployment-domains-list-branch/topicon.jpg",
+					 	url: "https://vercel.live/link/compass-forum-git-main-ryu-keitaro.vercel.app?via=deployment-domains-list-branch/topicon.jpg",
 						width: 512,
 						height: 512,
 						alt: 'OpenGraph Image',
