@@ -1,3 +1,4 @@
+//src/components/nav/index.tsx
 import Link from "next/link";
 import styles from "./index.module.scss";
 import Image from "next/image";
