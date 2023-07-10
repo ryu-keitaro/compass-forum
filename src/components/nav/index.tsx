@@ -47,9 +47,7 @@ const Nav: React.FC = () => {
           return (
             <li key={index} className={styles.navbtn}>
             
-                <a
-                 href={`${topic.path}`}
-                rel="noopener noreferrer">
+                <a href={`${topic.path}`} rel="noopener noreferrer">
 
                 {/* <Link href ={`${topic.path}`}> */}
                 <div className={styles.button}> 
@@ -62,7 +60,9 @@ const Nav: React.FC = () => {
                       priority
                     />
 
-                    <span className={styles.titlesize}>{topic.title}</span> 
+                  
+
+                  <span className={styles.titlesize}>{topic.title}</span> 
                   
                 
                     {/* </Link> */}
