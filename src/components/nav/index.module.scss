@@ -1,5 +1,5 @@
 .container {
-    margin-top: 0px;/*文字の下s幅*/
+    margin-top: 0x;/*文字の下s幅*/
     width: 100%;
     display: block;
 
@@ -22,7 +22,7 @@
   }
   .button{
     width: 100px;
-    height: 100px;
+    
     color: rgb(15, 36, 36);
     justify-content: center;
     font-weight: bold;
@@ -35,29 +35,40 @@
   color: #1b0d0d;
 }
 
+// ボタンの文字と文字の背景の帯の部分
 .namelogo{
   color: rgb(249, 249, 249);
   background-color: #0f1112;
+  
+}
+
+.p{
+  text-decoration: none ; /* 下線を無効化 */
 }
 
 
 
 
 .navbtn{
+    display: flex;
+    // justify-content: center;
     color: #fff;
     background-color: #73a7dc;
-    border-bottom: 2px solid #37332e;
-    // font-weight: bold;
-    align-items: center;
+    border-bottom: 0px solid #37332e;
+    font-weight: bold;
+    // align-items: center;
     text-align: center;
     
 }
+
+// 押したら色変わる
 .navbtn:hover{
     margin-top: 1px;
     color: #fff;
     background: #fb8c3d;
     border-bottom: 2px solid #b84c00;
     opacity: 1.0;
+
 
     .namelogo{
       color: #0f1112;

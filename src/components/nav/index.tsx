@@ -10,31 +10,31 @@ const TOPICS = [
   {
     icon: "/megaphone.png",
     path: "/",
-    // title: "募",
+    title: "募",
     name: "メンバー募集",
   },
   {
     icon: "/planning.png",
     path: "/solicit",
-    // title: "誘",
+    title: "誘",
     name: "勧誘募集",
   },
   {
     icon: "/swords.png",
     path: "/fight",
-    // title: "共",
+    title: "共",
     name: "固定募集",
   },
   {
     icon: "/question-mark.png",
     path: "/question",
-    // title: "疑",
+    title: "疑",
     name: "質問募集",
   },
   {
     icon: "/menu.png",
     path: "/menu",
-    // title: "使",
+    title: "使",
     name: "使い方",
   },
 ];
@@ -52,21 +52,23 @@ const Nav: React.FC = () => {
                 rel="noopener noreferrer">
 
                 {/* <Link href ={`${topic.path}`}> */}
-               
+                <div className={styles.button}> 
                   <Image
                       src={topic.icon}
                       alt=""
                       loading="eager"
-                      width={80}
-                      height={80}
+                      width={33}
+                      height={33}
                       priority
                     />
-                    {/* <span className={styles.titlesize}>{topic.title}</span> */}
+
+                    <span className={styles.titlesize}>{topic.title}</span> 
                   
                 
-                {/* </Link> */}
+                    {/* </Link> */}
        
-              <p className={styles.namelogo}>{topic.name}</p>
+                  <p className={styles.namelogo}>{topic.name}</p>
+                </div> 
               </a>
             </li>
           );
