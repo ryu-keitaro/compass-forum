@@ -35,7 +35,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
 					images: [
 					 {
 						// ↓firebasestorageに保存した画像を引っ張ってくる所（url変更必要）
-					 	url: "https://firebasestorage.googleapis.com/v0/b/test-nextjs-d6670.appspot.com/o/topicon.jpg?alt=media&token=471f438f-5e84-48e3-9bba-03461ec5fc13",
+					 	url: "https://www.compass-forum.net/topicon.net",
 						width: 512,
 						height: 512,
 						alt: 'Og Image Alt',
